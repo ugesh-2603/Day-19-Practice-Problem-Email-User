@@ -10,8 +10,9 @@ namespace Day_19_Practice_Problem_Email_User
             string firstName = GetUserInput("Enter a first name:");
             string lastName = GetUserInput("Enter a last name:");
             string email = GetUserInput("Enter an email address:");
+            string mobileNumber = GetUserInput("Enter a mobile number (with country code):");
 
-            if (IsValidFirstName(firstName) && IsValidLastName(lastName) && IsValidEmail(email))
+            if (IsValidFirstName(firstName) && IsValidLastName(lastName) && IsValidEmail(email) && IsValidMobileNumber(mobileNumber))
             {
                 Console.WriteLine("Valid inputs.");
             }
@@ -43,6 +44,12 @@ namespace Day_19_Practice_Problem_Email_User
         {
             string pattern = @"^[a-zA-Z0-9]+([._]?[a-zA-Z0-9]+)*@[a-zA-Z0-9]+([.-]?[a-zA-Z0-9]+)*\.[a-zA-Z]{2,}$";
             return Regex.IsMatch(email, pattern);
+        }
+
+        public static bool IsValidMobileNumber(string mobileNumber)
+        {
+            string pattern = @"^\+\d{1,3}\d{9}$"; 
+            return Regex.IsMatch(mobileNumber, pattern);
         }
 
 
