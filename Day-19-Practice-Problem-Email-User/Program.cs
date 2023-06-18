@@ -6,31 +6,30 @@ namespace Day_19_Practice_Problem_Email_User
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(" Welcome to Email & User Registration");
+            string lastName = GetUserInput();
 
-            string firstName = GetUserInput();
-
-            if (IsValidFirstName(firstName))
+            if (IsValidLastName(lastName))
             {
-                Console.WriteLine("Valid first name.");
+                Console.WriteLine("Valid last name.");
             }
             else
             {
-                Console.WriteLine("Invalid first name.");
+                Console.WriteLine("Invalid last name.");
             }
         }
 
         public static string GetUserInput()
         {
-            Console.WriteLine("Enter a first name:");
+            Console.WriteLine("Enter a last name:");
             return Console.ReadLine();
         }
 
-        public static bool IsValidFirstName(string firstName)
+        public static bool IsValidLastName(string lastName)
         {
             string pattern = "^[A-Z][a-zA-Z]{2,}$";
-            return Regex.IsMatch(firstName, pattern);
+            return Regex.IsMatch(lastName, pattern);
         }
+
     }
-    
+
 }
