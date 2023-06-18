@@ -1,0 +1,15 @@
+C:\Users\ugesh\source\repos\Day-19-Practice-Problem-Email-User\Day-19-Practice-Problem-Email-User\obj\Debug\net6.0\Day-19-Practice-Problem-Email-User.csproj.AssemblyReference.cache
+C:\Users\ugesh\source\repos\Day-19-Practice-Problem-Email-User\Day-19-Practice-Problem-Email-User\obj\Debug\net6.0\Day-19-Practice-Problem-Email-User.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ugesh\source\repos\Day-19-Practice-Problem-Email-User\Day-19-Practice-Problem-Email-User\obj\Debug\net6.0\Day-19-Practice-Problem-Email-User.AssemblyInfoInputs.cache
+C:\Users\ugesh\source\repos\Day-19-Practice-Problem-Email-User\Day-19-Practice-Problem-Email-User\obj\Debug\net6.0\Day-19-Practice-Problem-Email-User.AssemblyInfo.cs
+C:\Users\ugesh\source\repos\Day-19-Practice-Problem-Email-User\Day-19-Practice-Problem-Email-User\obj\Debug\net6.0\Day-19-Practice-Problem-Email-User.csproj.CoreCompileInputs.cache
+C:\Users\ugesh\source\repos\Day-19-Practice-Problem-Email-User\Day-19-Practice-Problem-Email-User\bin\Debug\net6.0\Day-19-Practice-Problem-Email-User.exe
+C:\Users\ugesh\source\repos\Day-19-Practice-Problem-Email-User\Day-19-Practice-Problem-Email-User\bin\Debug\net6.0\Day-19-Practice-Problem-Email-User.deps.json
+C:\Users\ugesh\source\repos\Day-19-Practice-Problem-Email-User\Day-19-Practice-Problem-Email-User\bin\Debug\net6.0\Day-19-Practice-Problem-Email-User.runtimeconfig.json
+C:\Users\ugesh\source\repos\Day-19-Practice-Problem-Email-User\Day-19-Practice-Problem-Email-User\bin\Debug\net6.0\Day-19-Practice-Problem-Email-User.dll
+C:\Users\ugesh\source\repos\Day-19-Practice-Problem-Email-User\Day-19-Practice-Problem-Email-User\bin\Debug\net6.0\Day-19-Practice-Problem-Email-User.pdb
+C:\Users\ugesh\source\repos\Day-19-Practice-Problem-Email-User\Day-19-Practice-Problem-Email-User\obj\Debug\net6.0\Day-19-Practice-Problem-Email-User.dll
+C:\Users\ugesh\source\repos\Day-19-Practice-Problem-Email-User\Day-19-Practice-Problem-Email-User\obj\Debug\net6.0\refint\Day-19-Practice-Problem-Email-User.dll
+C:\Users\ugesh\source\repos\Day-19-Practice-Problem-Email-User\Day-19-Practice-Problem-Email-User\obj\Debug\net6.0\Day-19-Practice-Problem-Email-User.pdb
+C:\Users\ugesh\source\repos\Day-19-Practice-Problem-Email-User\Day-19-Practice-Problem-Email-User\obj\Debug\net6.0\Day-19-Practice-Problem-Email-User.genruntimeconfig.cache
+C:\Users\ugesh\source\repos\Day-19-Practice-Problem-Email-User\Day-19-Practice-Problem-Email-User\obj\Debug\net6.0\ref\Day-19-Practice-Problem-Email-User.dll
