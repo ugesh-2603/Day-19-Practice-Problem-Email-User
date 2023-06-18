@@ -49,29 +49,38 @@ namespace Day_19_Practice_Problem_Email_User
 
         public static bool IsValidMobileNumber(string mobileNumber)
         {
-            string pattern = @"^\+\d{1,3}\d{9}$"; 
+            string pattern = @"^\+\d{1,3}\d{9}$";
             return Regex.IsMatch(mobileNumber, pattern);
         }
 
-        public static bool IsValidPassword(string password) 
+        public static bool IsValidPassword(string password)
         {
             return password.Length >= 8;
             return false;
 
             bool hasUppercase = false;
+            bool hasNumericDigit = false;
+
             foreach (char c in password)
             {
                 if (char.IsUpper(c))
                 {
-                    hasUppercase = true;
-                    break;
-                }
-            }
+                    if (char.IsUpper(c))
+                        hasUppercase = true;
 
-            return hasUppercase;
+                    if (char.IsDigit(c))
+                        hasNumericDigit = true;
+
+                    if (hasUppercase && hasNumericDigit)
+                        break;
+                }
+
+                return hasUppercase && hasNumericDigit;
+            }
         }
     }
 
+}
+
 
     
-}
