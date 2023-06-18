@@ -9,9 +9,9 @@ namespace Day_19_Practice_Problem_Email_User
             Console.WriteLine(" Welcome to Email & User Registration");
             string firstName = GetUserInput("Enter a first name:");
             string lastName = GetUserInput("Enter a last name:");
-            
+            string email = GetUserInput("Enter an email address:");
 
-            if (IsValidFirstName(firstName) && IsValidLastName(lastName))
+            if (IsValidFirstName(firstName) && IsValidLastName(lastName) && IsValidEmail(email))
             {
                 Console.WriteLine("Valid inputs.");
             }
@@ -39,6 +39,12 @@ namespace Day_19_Practice_Problem_Email_User
             return Regex.IsMatch(lastName, pattern);
         }
 
-       
+        public static bool IsValidEmail(string email)
+        {
+            string pattern = @"^[a-zA-Z0-9]+([._]?[a-zA-Z0-9]+)*@[a-zA-Z0-9]+([.-]?[a-zA-Z0-9]+)*\.[a-zA-Z]{2,}$";
+            return Regex.IsMatch(email, pattern);
+        }
+
+
     }
 }
