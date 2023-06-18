@@ -60,6 +60,7 @@ namespace Day_19_Practice_Problem_Email_User
 
             bool hasUppercase = false;
             bool hasNumericDigit = false;
+            bool hasSpecialCharacter = false;
 
             foreach (char c in password)
             {
@@ -71,15 +72,18 @@ namespace Day_19_Practice_Problem_Email_User
                     if (char.IsDigit(c))
                         hasNumericDigit = true;
 
-                    if (hasUppercase && hasNumericDigit)
+                    if (char.IsSymbol(c) || char.IsPunctuation(c))
+                        hasSpecialCharacter = true;
+
+                    if (hasUppercase && hasNumericDigit && hasSpecialCharacter)
                         break;
                 }
 
-                return hasUppercase && hasNumericDigit;
+                return hasUppercase && hasNumericDigit && hasSpecialCharacter;
             }
+
         }
     }
-
 }
 
 
