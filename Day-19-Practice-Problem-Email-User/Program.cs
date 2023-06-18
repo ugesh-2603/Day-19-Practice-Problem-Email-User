@@ -53,11 +53,25 @@ namespace Day_19_Practice_Problem_Email_User
             return Regex.IsMatch(mobileNumber, pattern);
         }
 
-        public static bool IsValidPassword(string password)
+        public static bool IsValidPassword(string password) 
         {
             return password.Length >= 8;
+            return false;
+
+            bool hasUppercase = false;
+            foreach (char c in password)
+            {
+                if (char.IsUpper(c))
+                {
+                    hasUppercase = true;
+                    break;
+                }
+            }
+
+            return hasUppercase;
         }
-
-
     }
+
+
+    
 }
