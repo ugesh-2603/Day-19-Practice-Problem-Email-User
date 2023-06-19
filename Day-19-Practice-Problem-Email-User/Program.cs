@@ -7,11 +7,12 @@ namespace Day_19_Practice_Problem_Email_User
         static void Main(string[] args)
         {
             Console.WriteLine(" Welcome to Email & User Registration");
-            string firstName = GetUserInput("Enter a first name:");
+            /*string firstName = GetUserInput("Enter a first name:");
             string lastName = GetUserInput("Enter a last name:");
             string email = GetUserInput("Enter an email address:");
             string mobileNumber = GetUserInput("Enter a mobile number (with country code):");
             string password = GetUserInput("Enter a password:");
+
 
             if (IsValidFirstName(firstName) && IsValidLastName(lastName) && IsValidEmail(email) && IsValidMobileNumber(mobileNumber) && IsValidPassword(password))
             {
@@ -80,11 +81,48 @@ namespace Day_19_Practice_Problem_Email_User
                 }
 
                 return hasUppercase && hasNumericDigit && hasSpecialCharacter;
-            }
+            }*/
+            string[] emails = {
+            "abc@yahoo.com",
+            "abc-100@yahoo.com",
+            "abc.100@yahoo.com",
+            "abc111@abc.com",
+            "abc-100@abc.net",
+            "abc.100@abc.com.au",
+            "abc@1.com",
+            "abc@gmail.com.com",
+            "abc+100@gmail.com",
+            "abc",
+            "abc@.com.my",
+            "abc123@gmail.a",
+            "abc123@.com",
+            "abc123@.com.com",
+            ".abc@abc.com",
+            "abc()*@gmail.com",
+            "abc@%*.com",
+            "abc..2002@gmail.com",
+            "abc.@gmail.com",
+            "abc@abc@gmail.com",
+            "abc@gmail.com.1a",
+            "abc@gmail.com.aa.au"
+        };
 
+            foreach (string email in emails)
+            {
+                bool isValid = IsValidEmail(email);
+                Console.WriteLine($"{email} - {(isValid ? "Valid" : "Invalid")}");
+            }
         }
+
+        public static bool IsValidEmail(string email)
+        {
+            string pattern = @"^[a-zA-Z0-9]+([._%+-]?[a-zA-Z0-9]+)*@[a-zA-Z0-9]+([.-]?[a-zA-Z0-9]+)*\.[a-zA-Z]{2,}$";
+            return Regex.IsMatch(email, pattern);
+        }
+
     }
 }
+
 
 
     
